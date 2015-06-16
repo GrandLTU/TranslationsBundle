@@ -10,6 +10,7 @@ services:
   - elasticsearch
 
 before_install:
+  - php -i
   - composer self-update
   - composer require --no-update symfony/symfony:${SYMFONY}
 install:
